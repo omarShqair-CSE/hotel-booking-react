@@ -22,11 +22,11 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`fixed top-0 left-0 bg-indigo-500 w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 ${isScrolled ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-4" : "py-4 md:py-6"}`}>
+        <nav className={`fixed top-0 left-0  w-full flex items-center justify-between px-3 md:px-10 lg:px-20 xl:px-28 transition-all duration-500 z-50 ${isScrolled ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-2 md:py-3" : "py-3 md:py-4"}`}>
 
             {/* Logo */}
             <a href="/" >
-                <img src={logo} alt="logo" className={` w-40   ${isScrolled && "invert opacity-80"}`} />
+                <img src={logo} alt="logo" className={` w-30  h-30  ${isScrolled && "invert opacity-80"}`} />
             </a>
 
             {/* Desktop Nav */}

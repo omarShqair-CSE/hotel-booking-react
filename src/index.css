@@ -4,3 +4,17 @@
 * {
   font-family: Outfit;
 }
+button {
+  background: #e89755;
+  padding: 8px;
+  border-radius: 17px;
+  color: white;
+  width: 160px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #c47331;
+}
