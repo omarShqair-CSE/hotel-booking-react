@@ -51,9 +51,10 @@ function Testimonials() {
                                 </div>
                             </div>
                             <div className="flex items-center text-yellow-400 mb-2">
-                                {Array.from({ length: testimonial.rating }).map((_, i) => (
-                                    <FaStar key={i} />
-                                ))}
+                                {Array.from({ length: testimonial.rating }).map(
+                                    (_, i) => (
+                                        <FaStar key={i} />
+                                    ))}
                             </div>
                             <p className="text-gray-600 text-sm ">"{testimonial.review}"</p>
                         </div>
