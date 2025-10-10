@@ -1,8 +1,12 @@
+import hotel3 from '../assets/hotel_3.jpg';
+
 function Hero() {
     const cities = ["Istanbul", "New York", "Oslo", "London", "Beirut"];
 
     return (
-        <div className='relative flex flex-col justify-center items-center p-4 sm:p-6 md:p-10 text-white bg-[url("src/assets/hotel_3.jpg")] bg-no-repeat bg-cover bg-center h-screen'>
+        <div className='relative flex flex-col justify-center items-center p-4 sm:p-6 md:p-10 text-white  bg-no-repeat bg-cover bg-center h-screen'
+            style={{ backgroundImage: `url(${hotel3})` }}
+        >
             <div className='absolute inset-0 bg-black opacity-60'></div>
 
             <div className='relative z-10 w-full max-w-4xl'>
