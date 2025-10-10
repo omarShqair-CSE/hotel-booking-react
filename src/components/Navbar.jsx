@@ -8,8 +8,7 @@ const Navbar = () => {
     const navLinks = [
         { name: 'Home', path: '/' },
         { name: 'Hotels', path: '/hotels' },
-        { name: 'Experience', path: '/experience' },
-        { name: 'About', path: '/about' },
+        { name: 'My Booking', path: '/my-bookings' },
     ];
 
 
