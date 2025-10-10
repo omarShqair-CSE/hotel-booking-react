@@ -69,7 +69,7 @@ const Navbar = () => {
                             <UserButton.MenuItems>
                                 <UserButton.Action label="My Booking"
                                     labelIcon={<FaBook />}
-                                    onClick={() => navigate('my-booking')} />
+                                    onClick={() => navigate('my-bookings')} />
                             </UserButton.MenuItems>
                         </UserButton>) : (
                         <button onClick={openSignIn} className={`px-8 py-2.5 rounded-full ml-4 transition-all duration-500 ${isScrolled ? "text-white bg-black" : "bg-white text-black"}`}>
