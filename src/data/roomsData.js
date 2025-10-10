@@ -8,6 +8,7 @@ import allrooms_7 from "../assets/allrooms_7.jpg";
 import allrooms_8 from "../assets/allrooms_8.jpg";
 import allrooms_9 from "../assets/allrooms_9.jpg";
 import allrooms_10 from "../assets/allrooms_10.jpg";
+import { FaSlack } from "react-icons/fa";
 
 export const roomsData = [
   {
@@ -20,7 +21,7 @@ export const roomsData = [
     rating: 4,
     amenities: ["Balcony", "Mountain View", "High-Speed WiFi"],
     images: allrooms_1,
-    isAvailable: true,
+    isAvailable: false,
     createdAt: "2025-09-01T10:00:00.000Z",
     updatedAt: "2025-09-01T10:00:00.000Z",
   },
@@ -118,7 +119,7 @@ export const roomsData = [
     rating: 4,
     amenities: ["Sea View", "Balcony", "Pool Access"],
     images: allrooms_8,
-    isAvailable: true,
+    isAvailable: false,
     createdAt: "2025-09-08T10:15:00.000Z",
     updatedAt: "2025-09-08T10:15:00.000Z",
   },
@@ -146,7 +147,7 @@ export const roomsData = [
     rating: 5,
     amenities: ["Sea View", "Breakfast Included", "WiFi"],
     images: allrooms_10,
-    isAvailable: true,
+    isAvailable: false,
     createdAt: "2025-09-10T11:30:00.000Z",
     updatedAt: "2025-09-10T11:30:00.000Z",
   },

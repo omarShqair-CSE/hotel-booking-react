@@ -2,15 +2,15 @@ import { userBookingsData } from "../data/userBookingsData";
 
 function MyBooking() {
     return (
-        <div className="mt-40 p-8">
-            <h2 className="font-bold text-center text-3xl bg-gray-400 py-6 rounded-lg shadow-md">
+        <div className="mt-40 p-8 sm:p-8">
+            <h2 className="font-bold text-center text-2xl bg-gray-400 py-6 rounded-lg shadow-md sm:text-3xl sm:py-6">
                 My Bookings
             </h2>
 
 
 
             <div className="overflow-x-auto mt-6 shadow-lg rounded-lg">
-                <table className="w-full border border-gray-300 text-center">
+                <table className="min-w-full border border-gray-300 text-center text-sm sm:text-base">
                     <thead className="bg-gray-200 text-gray-800 uppercase">
                         <tr>
                             <th className="py-3 px-4">User</th>
@@ -36,7 +36,7 @@ function MyBooking() {
                                     <img
                                         src={booking.image}
                                         alt={booking.hotel}
-                                        className="w-24 h-16 object-cover rounded-lg mx-auto shadow-sm"
+                                        className="w-20 h-14 sm:w-24 sm:h-16 object-cover rounded-lg mx-auto shadow-sm"
                                     />
                                 </td>
 
@@ -66,7 +66,6 @@ function MyBooking() {
                                 >
                                     {booking.status}
                                 </td>
-
                                 <td className={`py-3 px-4 ${booking.isPaid ? 'text-green-500' : 'text-red-500'} `}>{booking.paymentMethod}({booking.isPaid ? "Paid" : "Unpaid"})</td>
                             </tr>
                         ))}
