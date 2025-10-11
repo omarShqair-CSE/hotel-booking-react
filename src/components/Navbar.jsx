@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.png"
 import { useClerk, useUser, UserButton } from "@clerk/clerk-react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaBook } from "react-icons/fa";
 
 const Navbar = () => {
@@ -39,17 +39,17 @@ const Navbar = () => {
         <nav className={`fixed top-0 left-0  w-full flex items-center justify-between px-3 md:px-10 lg:px-20 xl:px-28 transition-all duration-500 z-50 ${isScrolled ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-2 md:py-3" : "py-3 md:py-4"}`}>
 
             {/* Logo */}
-            <a href="/" >
+            <Link to="/" >
                 <img src={logo} alt="logo" className={` w-30  h-30  ${isScrolled && "invert opacity-80"}`} />
-            </a>
+            </Link>
 
             {/* Desktop Nav */}
             <div className="hidden md:flex items-center gap-4 lg:gap-8">
                 {navLinks.map((link, i) => (
-                    <a key={i} href={link.path} className={`group flex flex-col gap-0.5 ${isScrolled ? "text-gray-700" : "text-white"}`}>
+                    <Link key={i} to={link.path} className={`group flex flex-col gap-0.5 ${isScrolled ? "text-gray-700" : "text-white"}`}>
                         {link.name}
                         <div className={`${isScrolled ? "bg-gray-700" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`} />
-                    </a>
+                    </Link>
                 ))}
                 {user && <button
                     onClick={() => navigate('/dashboard')}
@@ -104,9 +104,9 @@ const Navbar = () => {
                 </button>
 
                 {navLinks.map((link, i) => (
-                    <a key={i} href={link.path} onClick={() => setIsMenuOpen(false)}>
+                    <Link key={i} to={link.path} onClick={() => setIsMenuOpen(false)}>
                         {link.name}
-                    </a>
+                    </Link>
                 ))}
 
                 {user && <button
